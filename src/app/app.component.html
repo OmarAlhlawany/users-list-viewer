@@ -1,0 +1,9 @@
+<!-- app.component.html -->
+<app-header></app-header>
+
+<main class="bg-dark text-white text-center py-5 mx-5 ">
+  <app-search (search)="onSearch($event)"></app-search>
+  <app-user-list [users]="filteredUsers"></app-user-list>
+</main>
+
+<app-footer></app-footer>
